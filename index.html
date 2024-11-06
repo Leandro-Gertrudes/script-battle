@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCRIPT BATTLE</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body id="index-body">
+    <div id="contain-index"> <!-- Contain begin-->
+        <section id="selection">
+            <form action="">
+                <h1>Enter your name:</h1>
+                <label for="user-name"> <!--User name-->
+                    <input name="name" type="text" id="user-name" placeholder="Name" required>
+                </label>
+
+                <h3>Choose your class</h3>
+                <div id="classes-soldier">  <!-- classes-->
+                    <label for="warrior">
+                        <input type="radio" name="class" id="warrior"> Warrior
+                    </label>
+                    <label for="mage">
+                        <input type="radio" name="class" id="mage"> Mage
+                    </label>
+                    <label for="barbarian">
+                        <input type="radio" name="class" id="barbarian"> Barbarian
+                    </label>
+                </div>
+            </form>
+            <button onclick="start()">PLAY</button>
+        </section>
+        <p id="by">By: Leandro Gertrudes <br> 
+        <a href="https://github.com/Leandro-Gertrudes">My github</a> </p>
+        <div>
+        </div>
+    </div><!--End contain-->
+    <div id="infos"> 
+        <h1 style="text-align: center; color: yellow;">Classes</h1> <br>
+        <p>WARRIOR: Increases critical hit chance after each turn.</p> <br>
+        <p>MAGE: Increases strength after each turn.</p> <br>
+        <p>BARBARIAN: Higher health and armor stats.</p> <br>
+
+        <h1 style="text-align: center; color: yellow;">Instructions</h1> <br>
+        <p>-This is a turn-based battle game.</p><br>
+        <p>-You can attack, counterattack, and use a healing potion.</p><br>
+        <p>-When you counterattack, you reflect half of the damage dealt by your opponent back at them.</p><br>
+        <p>-After using the counterattack twice, you won’t be able to use it in the next round.</p><br>
+        <p>-You have only one potion per game.</p><br>
+        <p>-THE RULES APPLY TO BOTH YOU AND THE CPU, SO ALWAYS WATCH YOUR OPPONENT'S MOVES.</p><br>
+    </div>
+
+<script src="JavaScript/script-index.js"></script>  
+</body>
+</html>

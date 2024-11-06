@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCRIPT BATTLE</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body id="fight-body">
+    <div id="contain-fight"  > <!--Player one-->
+        <div id="person1">
+            <div class="nickName"></div>
+
+            <div class="life-contain">
+                <div class="life-player"></div>
+                <div class="life-text-player"></div>
+            </div>
+            
+
+            <img id="player-img" src="" alt="">
+            <div class="effect" id="effect-player"></div>
+            <ul id="moves">
+                <li id="attack" >Attack</li>
+                <li id="counter">Counter attack (<span id="number-counter"></span>)</li>
+                <li id="potion" >Healing Potion (<span id="number-potion"></span>)</li>                
+            </ul>
+        </div> <!--Player one (end)-->
+
+        <div style="text-align: center;"> <!-- battle-status-->
+            <h1 id="message" style="border-bottom: 1px solid black;"></h1>
+            <button id="restart">Restart</button> <button id="new-game">New Game</button>
+
+        </div><!--end battle-status-->
+
+        <div id="person2"> <!--CPU player-->
+            <div style="text-align: right; width: 150px;">Enimy</div> 
+
+            <div class="life-contain">
+                <div class="life-CPU"></div>
+                <div class="life-text-CPU"></div>
+            </div>
+            <img id="cpu-img" src="" alt="">
+            <div class="effect" id="effect-enemy"></div>
+        </div> <!--end CPU-->
+
+    </div>
+    <script src="JavaScript/script-fight.js"></script>
+</body>
+</html>

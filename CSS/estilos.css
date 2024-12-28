@@ -59,7 +59,7 @@ body {
 #contain-index h3 {
     margin-bottom: 10px;
 }
-#contain-index button {
+#contain-index #play {
     padding: 15px 25px 15px 25px;
     background: red;
     color: white;
@@ -69,7 +69,21 @@ body {
     border-radius: 10px;
 }
 
-#contain-index button:hover {
+.instructions {
+    padding: 5px;
+    background: rgb(0, 255, 110);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 0.4em;
+    border-radius: 10px;
+    display: none;
+}
+.instructions:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+}
+#contain-index #play:hover {
     background-color: rgb(186, 15, 15);
     cursor: pointer;
 }
@@ -211,4 +225,13 @@ body {
     transition: opacity 0.5s;
     
   }
-  
+
+  @media (max-width: 1200px) {
+    #infos{
+        position: relative;
+        display: none;
+    }
+    .instructions{
+        display: inline-block;
+    }  
+  }

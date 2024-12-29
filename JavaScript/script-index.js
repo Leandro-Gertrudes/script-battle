@@ -14,7 +14,7 @@ function start() {
         return; 
     }
 }
-function instructions() {
+function instructions() { //button how to play
     const home = document.querySelector("#contain-index");
     const infos = document.querySelector("#infos");
 

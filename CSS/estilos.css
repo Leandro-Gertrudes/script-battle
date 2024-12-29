@@ -243,6 +243,9 @@ body {
     #contain-fight{
         width: 100%;
     }
+    #fight-body{
+        width: 80%;
+    }
     #person1{
         position: relative;
         top: 90px;
